@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ('../template/head', { title: title  } ); %>
+    </head>
+    <body>
+
+        <header>
+            <%- include ('../template/header', { username: username , configHeader:configHeader, currpage : currpage  }); %>
+        </header>
+
+        <main>
+            <div class="container" >
+                <div class="jumbotron">
+                    <h1>Welcome to the ATN Shop</h1>
+                    <div style="text-align: center;">
+                    <p>
+                        <img src="/images/logo.jpg" width="50%" height="100%"/>
+
+                        <audio controls autoplay loop hidden="true">
+                        <source src="/audio/product.mp3" type="audio/mpeg">          
+                        </audio>
+                    </p>
+                    </div>
+                      <a class="btn btn-lg btn-primary" href="/product/view" role="button">View Catalog »</a>
+                    </p>
+                  </div>
+            </div>
+        </main>
+          
+        
+        <%- include ('../template/footer'); %>
+        
+
+    </body>
+
+</html> 
